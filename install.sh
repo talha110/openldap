@@ -8,7 +8,7 @@ systemctl start slapd
 systemctl enable slapd 
 
 cd /opt
-git clone https://github.com/linuxautomations/openldap.git &>/dev/null
+git clone https://github.com/talha110/openldap.git &>/dev/null
 [ $? -ne 0 ] && echo "Failed with pulling repo" && exit 1
 cd /opt/openldap
 ldapadd -Y EXTERNAL -H ldapi:/// -f chrootpw.ldif 
