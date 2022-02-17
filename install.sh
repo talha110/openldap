@@ -16,7 +16,7 @@ ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/openldap/schema/cosine.ldif
 ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/openldap/schema/nis.ldif 
 ldapadd -Y EXTERNAL -H ldapi:/// -f /etc/openldap/schema/inetorgperson.ldif 
 ldapmodify -Y EXTERNAL -H ldapi:/// -f chdomain.ldif 
-ldapadd -x -D cn=Manager,dc=linuxautomations,dc=com -W -f basedomain.ldif 
+ldapadd -x -D cn=Manager,dc=techcity,dc=com -W -f basedomain.ldif 
 
 yum install httpd php php-ldap -y &>/dev/null
 cd /var/www/html
